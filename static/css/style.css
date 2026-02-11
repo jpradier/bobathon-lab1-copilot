@@ -1,0 +1,60 @@
+/**
+ * Custom styles for Todo App
+ * Bootstrap provides most styling - these are minimal overrides
+ */
+
+/* Smooth transitions for todo items */
+.list-group-item {
+    transition: background-color 0.2s ease, opacity 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Checkbox styling */
+.todo-checkbox {
+    cursor: pointer;
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.form-check-label {
+    cursor: pointer;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+/* Delete button */
+.delete-btn {
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+}
+
+.list-group-item:hover .delete-btn {
+    opacity: 1;
+}
+
+/* Empty state icon */
+#empty-state .bi-inbox {
+    font-size: 3rem;
+    opacity: 0.5;
+}
+
+/* Card shadow enhancement */
+.card {
+    border: none;
+}
+
+/* Input focus state */
+#todo-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
