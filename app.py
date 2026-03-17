@@ -6,7 +6,7 @@ from config import Config
 from models.todo import db
 from routes.api import api
 
-
+# Application factory function
 def create_app(config_class=Config):
     """Application factory function."""
     app = Flask(__name__)
